@@ -1,0 +1,36 @@
+.notificationModal {
+  display: none;
+}
+.notificationModalForm {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.notificationInputBoxTextArea {
+  width: 100%;
+  height: 200px !important;
+  font-family: sans-serif;
+}
+@media screen and (min-width: 800px) {
+  .notificationModal {
+    display: none;
+  }
+  .notificationModal .Modal .ModalContainer {
+    height: 500px !important;
+  }
+  .notificationModalForm {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .notificationInputBoxTextArea {
+    height: 150px !important;
+    font-family: sans-serif;
+  }
+}

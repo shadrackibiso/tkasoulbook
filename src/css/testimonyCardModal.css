@@ -1,0 +1,6 @@
+@media screen and (min-width: 800px) {
+  .testimonyCardModalContainer {
+    width: 50% !important;
+    height: 90%;
+  }
+}

@@ -1,0 +1,57 @@
+.memberProfilePicContainer {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.memberProfilePicContainer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.memberNameContainer {
+  margin-top: 30px;
+}
+.memberCardDate {
+  margin-top: 25px;
+}
+.soulsWonCounterLabel {
+  font-weight: bolder;
+  color: black;
+  margin-left: 5px;
+}
+.soulCardOtherDetails {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  .memberProfilePicContainer {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  .memberProfilePicContainer img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .memberNameContainer {
+    margin-top: 30px;
+  }
+  .memberCardDate {
+    margin-top: 25px;
+  }
+  .soulsWonCounterLabel {
+    font-weight: bolder;
+    color: black;
+  }
+  .soulCardOtherDetails {
+    display: block;
+  }
+}

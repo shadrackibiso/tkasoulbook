@@ -1,0 +1,105 @@
+.testimonyCardContainer {
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid lightgray;
+  animation: slide 0.2s ease both;
+}
+.testimonyCardDate {
+  font-size: 12px;
+  color: #999999;
+  margin-left: 5px;
+}
+.testimonyCardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  overflow: hidden;
+  display: inline-flex;
+  padding-left: 5px;
+  text-transform: capitalize;
+  color: black;
+  margin-top: 5px;
+}
+.sermonModalScriptures {
+  font-size: 14px;
+  color: #999999;
+  margin-left: 5px;
+}
+.testimonyCardText {
+  font-size: 15px;
+  line-height: 25px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.testimonyCardFrom {
+  font-size: 14px;
+  color: #999999;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.testimonyCardGradient {
+  width: 7px;
+  height: 100%;
+  background: #29abe2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.expandText {
+  color: #999999;
+  font-size: 12px;
+  cursor: pointer;
+}
+.testimonyCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.testimonyCardOption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: none;
+  font-size: 12px;
+  color: #999999;
+  transition: 0.1s ease;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+@media screen and (min-width: 800px) {
+  .testimonyMainContent {
+    cursor: pointer;
+  }
+  .testimonyCardTitle {
+    font-size: 18px;
+  }
+  .testimonyCardText {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .testimonyCardFrom {
+    font-size: 14px;
+    color: #999999;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  .testimonyCardOption {
+    cursor: pointer;
+  }
+  .testimonyCardOption:hover {
+    background-color: lightgray;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .testimonyCardContainer {
+    width: 50%;
+  }
+}

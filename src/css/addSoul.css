@@ -1,0 +1,66 @@
+.addSoulContainer {
+  background-color: white;
+  margin-top: 45px;
+  width: 100%;
+  padding-bottom: 200px;
+  overflow: hidden;
+}
+.addSoulForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  position: relative;
+  animation: slide 0.2s ease both;
+}
+.AddSoulPage {
+  width: 100%;
+}
+.inputBoxTextAreaMobile {
+  width: 250px;
+  height: 100px;
+  font-family: sans-serif;
+}
+.inputBoxContainerMobile {
+  width: 90%;
+  margin-top: 5px;
+}
+.inputBoxContainerMobile .inputBox {
+  width: 100%;
+  padding: 15px 10px;
+  margin-bottom: 12px;
+}
+.selectBox {
+  padding: 0px !important;
+}
+.addSoulTabMenu {
+  width: 100%;
+  padding: 15px 10px;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  border-bottom: 1px solid lightgrey;
+}
+.addSoulTab {
+  width: 33.3333%;
+  display: inline-block;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 50px;
+  transition: 0.1s ease;
+}
+.addSoulTabSelected {
+  color: white;
+  background-color: #29abe2;
+  width: 33.3333%;
+  display: inline-block;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 50px;
+  transition: 0.1s ease;
+}

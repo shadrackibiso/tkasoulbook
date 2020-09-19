@@ -1,0 +1,42 @@
+.dataSummaryContainer {
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  .dataSummaryContainer {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    height: 80px;
+    display: block;
+  }
+  .dataSummaryCard {
+    background-color: white;
+    min-width: 80px;
+    padding: 20px 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid lightgray;
+    display: inline-block;
+    margin-right: 20px;
+    transition: 0.2s ease;
+  }
+  .dataCount {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .dataLabel {
+    font-size: 12px;
+    color: #777777;
+  }
+  .addSoulCard {
+    background-color: #29abe2;
+    color: white;
+    cursor: pointer;
+  }
+  .addSoulCard:hover {
+    background-color: #258ebb;
+  }
+  .addSoulCard .dataLabel {
+    color: white;
+  }
+}

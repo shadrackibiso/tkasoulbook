@@ -1,0 +1,182 @@
+.homeCellContainer {
+  background-color: inherit;
+  height: 88%;
+  margin-top: 45px;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: fixed;
+  overflow: auto;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.homeCellManualHeader,
+.homeCellFormHeader {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.homeCellFormHeader {
+  margin-top: 10px;
+}
+.homeCellManualDiv {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: none;
+  background-color: lightgray;
+}
+.homeCellManualDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0px -50px;
+}
+.homeCellFormContainer {
+  background-color: white;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.homeCellFormRow {
+  width: 100%;
+  margin-bottom: 7px;
+}
+.homeCellFormInputContainer {
+  margin-right: 0px;
+  margin-top: 15px;
+}
+.homeCellFFormHeader {
+  font-size: 13px;
+  color: #999999;
+  margin-bottom: 5px;
+}
+.homeCellFormInputBox {
+  width: 100%;
+  height: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #999999;
+  transition: 0.1s ease;
+}
+.homeCellFormTextArea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #999999;
+  transition: 0.1s ease;
+}
+.homeCellFormInputBox:focus,
+.homeCellFormTextArea:focus {
+  outline: none;
+  border: 1.5px solid #29abe2;
+}
+.homeCellFormBtn {
+  background-color: #29abe2;
+  border-radius: 5px;
+  margin: 0px auto;
+  color: white;
+  font-size: 14px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+@media screen and (min-width: 800px) {
+  .homeCellContainer {
+    background-color: inherit;
+    height: 90%;
+    margin-top: 55px;
+    margin-left: 23%;
+    position: fixed;
+    width: 76%;
+  }
+  .homeCellManualHeader,
+  .homeCellFormHeader {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .homeCellFormHeader {
+    margin-top: 10px;
+  }
+  .homeCellManualDiv {
+    width: 272px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .homeCellManualDiv img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0px -48px;
+  }
+  .homeCellFormContainer {
+    background-color: white;
+    width: 85%;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .homeCellFormRow {
+    width: 100%;
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: center;
+  }
+  .homeCellFormInputContainer {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .homeCellFFormHeader {
+    font-size: 13px;
+    color: #999999;
+    margin-bottom: 5px;
+  }
+  .homeCellFormInputBox {
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #999999;
+    transition: 0.1s ease;
+  }
+  .homeCellFormTextArea {
+    width: 790px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #999999;
+    transition: 0.1s ease;
+  }
+  .homeCellFormInputBox:focus,
+  .homeCellFormTextArea:focus {
+    outline: none;
+    border: 1.5px solid #29abe2;
+  }
+  .homeCellFormBtn {
+    background-color: #29abe2;
+    border-radius: 5px;
+    margin: 0px auto;
+    color: white;
+    font-size: 14px;
+    padding: 5px 15px;
+    cursor: pointer;
+  }
+}

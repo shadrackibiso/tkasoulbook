@@ -1,0 +1,78 @@
+.addSoulModal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.addSoulModal .ModalContainer {
+  height: 75%;
+}
+.AddSoulForm {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.addSoulModalTab {
+  padding-bottom: 20px;
+}
+.addSoulModalTab div {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-size: 14px;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+.addSoulModalTab div:hover {
+  background-color: #e7e7e7;
+}
+.selectedTab {
+  background-color: #29abe2;
+  color: white;
+  transition: 0.1s ease;
+}
+.selectedTab:hover {
+  background-color: #29abe2 !important;
+}
+.inputBoxRow .inputBoxContainer {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.inputBoxLabel {
+  font-size: 12px;
+  color: #777777;
+  text-transform: lowercase;
+}
+.inputBox {
+  border-radius: 2px;
+  border: 1px solid lightgrey;
+  height: 30px;
+  margin-top: 5px;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+}
+.inputBox:focus {
+  outline: 1px solid #29abe2;
+  border: 1px solid #29abe2;
+}
+.inputBoxRow:first-child {
+  margin-top: 0;
+}
+.inputBoxRow {
+  margin-top: 15px;
+  width: 100%;
+}
+.inputBoxTextArea {
+  width: 100%;
+  height: 50px;
+  font-family: sans-serif;
+}
+.selectBox {
+  font-size: 14px;
+  padding: 0;
+  cursor: pointer;
+}

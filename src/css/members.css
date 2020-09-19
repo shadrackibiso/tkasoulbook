@@ -1,0 +1,16 @@
+.members {
+  background-color: inherit;
+  width: 100%;
+  overflow: hidden;
+  background-color: inherit;
+}
+.membersContainer {
+  width: 100%;
+  padding: 10px;
+  padding: 100px 10px 60px !important;
+}
+@media screen and (min-width: 800px) {
+  .membersContainer {
+    padding: 50px 0px 10px !important;
+  }
+}

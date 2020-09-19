@@ -1,0 +1,19 @@
+.errorContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.errorContainer svg {
+  font-size: 50px;
+}
+.errorContainer div {
+  width: 50%;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .errorContainer {
+    height: 50vh;
+  }
+}

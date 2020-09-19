@@ -1,0 +1,88 @@
+.profileContainer {
+  width: 100%;
+  position: relative;
+  margin-top: 45px;
+}
+.profilePage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.profilePicContainer {
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+}
+.profilePicContainer img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.profileDetailsContainer {
+  padding: 20px;
+  background-color: white;
+  padding-bottom: 70px;
+}
+.profileDetailContainer div {
+  display: inline-flex;
+}
+.profileDetailContainer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.profileDetailIcon {
+  margin-right: 10px;
+  color: #29abe2;
+  font-size: 16px;
+}
+.profileDetail {
+  color: grey;
+  font-size: 14px;
+}
+.profileHeader {
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profileHeaderLabel {
+  display: none;
+}
+.profileEditBtn {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 800px) {
+  .profilePage {
+    background-color: inherit;
+  }
+  .profileContainer {
+    width: 400px;
+    position: relative;
+    margin-top: 70px;
+  }
+  .profileDetailContainer div {
+    display: inline-flex;
+  }
+  .profileDetailsContainer {
+    padding: 20px;
+    background-color: white;
+    padding-bottom: 30px;
+  }
+  .profileDetailContainer {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .profileHeader {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .profileHeaderLabel {
+    display: flex;
+  }
+}

@@ -1,0 +1,41 @@
+.testimoniesPageContainer {
+  background-color: #e4e4e4;
+  margin-top: 50px;
+}
+.testimonyTabMenuMobile {
+  margin-left: 0px !important;
+}
+.testimoniesCardContainer {
+  padding: 55px 10px;
+}
+.addTestimonyBtnMobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  background-color: #29abe2;
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+  animation: zoom 0.2s ease;
+}
+@media screen and (min-width: 800px) {
+  .testimoniesPageContainer {
+    background-color: inherit;
+  }
+  .testimoniesCardContainer {
+    padding: 50px 0px 10px;
+  }
+  .addTestimonyBtn {
+    display: flex;
+    flex-basis: 40%;
+  }
+  .addTestimonyBtnMobile {
+    display: none;
+  }
+}

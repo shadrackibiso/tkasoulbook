@@ -1,0 +1,79 @@
+.sermonCardContainer {
+  padding: 60px 10px 50px;
+}
+.addSermonBtn {
+  flex-basis: 20%;
+}
+.SermonModalBody {
+  padding: 55px 0px 15px !important;
+}
+.SermonModalBody form div {
+  margin-bottom: 10px;
+}
+.singleSermonContainer {
+  padding: 10px 10px 70px;
+  animation: slide 0.2s ease both;
+  position: relative;
+}
+.singleSermonHeader {
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 20px;
+}
+.singleSermonTitle {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 25px;
+}
+.singleSermonScriptures {
+  margin-top: 5px;
+  color: grey;
+}
+.singleSermonText {
+  margin-top: 10px;
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 20px;
+  font-size: 16px;
+}
+.singleSermonAuthor {
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 20px;
+  margin-top: 10px;
+  color: grey;
+}
+.sermonFormInput {
+  border: 1px solid lightgrey;
+  padding: 5px;
+  width: 100%;
+  border-radius: 2px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+.sermonFormInput:focus {
+  outline: 1px solid #29abe2;
+  border: 1px solid #29abe2;
+}
+@media screen and (min-width: 800px) {
+  .sermonCardContainer {
+    padding: 50px 0px 10px;
+    margin-top: 0px;
+    border-top: none;
+  }
+  .SermonModalBody {
+    padding: 55px 0px 15px !important;
+  }
+  .singleSermonContainer {
+    padding: 0px 0px 10px;
+  }
+  .sermonModalContainer {
+    height: 90% !important;
+    width: 60% !important;
+  }
+}
+@media screen and (min-width: 2500px) {
+  .sermonCard {
+    width: 100% !important;
+  }
+}

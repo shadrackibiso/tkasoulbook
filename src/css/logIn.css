@@ -1,0 +1,89 @@
+.logInPage {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.logInSideLabel {
+  display: none;
+}
+.logInFormContainer {
+  margin-left: 0px;
+  margin-top: 50px;
+}
+.logInLabel {
+  font-size: 40px;
+  font-weight: 500;
+}
+.logInForm {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.logInInputLabel {
+  color: #999999;
+  font-size: 14px;
+}
+.logInInputBox {
+  border: none;
+  border-bottom: 1px solid #999999;
+  margin-top: 5px;
+  font-size: 15px;
+  padding: 0px 0px 5px;
+  width: 250px;
+  margin-bottom: 10px;
+  transition: 0.1s ease;
+}
+.logInInputBox:focus {
+  outline: none;
+  border-bottom: 2px solid #29abe2;
+}
+.logInButton {
+  margin-top: 20px;
+  background-color: #29abe2;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+.logInButton:active {
+  background-color: black;
+}
+.logInSignUpWrap {
+  margin-top: 20px;
+}
+.logInSignUpWrap div {
+  font-size: 12px;
+  color: #999999;
+}
+.SignUpButton {
+  margin-top: 10px;
+  background-color: white;
+  color: #29abe2;
+  border: 1px solid #29abe2;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+@media screen and (min-width: 800px) {
+  .logInSideLabel {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 30%;
+    background-color: #29abe2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logInFormContainer {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .logInPage {
+    justify-content: start;
+  }
+}

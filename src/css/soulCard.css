@@ -1,0 +1,128 @@
+@keyframes slide {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+.soulCardContainer {
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 10px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 50px;
+  border-radius: 5px;
+  position: relative;
+  left: 0;
+  overflow: hidden;
+  transition: 0.2s ease;
+  animation: slide 0.2s ease both;
+}
+.soulCardGradient {
+  position: absolute;
+  width: 7px;
+  height: 100%;
+  background: #29abe2;
+  top: 0;
+  left: 0;
+}
+.soulCardOptions {
+  width: 90%;
+  border-top: 1px solid lightgray;
+  margin-top: 10px;
+  position: absolute;
+  margin-bottom: 10px;
+  left: 15px;
+}
+.soulCardOptionIcon a,
+.soulCardOptionIcon span {
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 50px;
+  text-align: center;
+  background-color: inherit;
+  transition: 0.4s ease;
+}
+.soulCardOptionIcon {
+  padding: 5px;
+  width: 33.33333333%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid lightgray;
+  font-size: 15px;
+}
+.soulCardMainIcon {
+  color: #29abe2;
+}
+.soulCardOptionIcon:last-child {
+  border-right: none;
+}
+.soulCardNameContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.soulCardNameContainer span svg {
+  display: flex;
+  align-items: center;
+}
+.soulCardName {
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  overflow: hidden;
+  display: inline-flex;
+  padding-left: 5px;
+  text-transform: capitalize;
+}
+.soulCardAddress {
+  font-size: 14px;
+  color: grey;
+  width: 350px;
+  padding-left: 5px;
+}
+.soulCardDate {
+  font-size: 12px;
+  color: grey;
+}
+.soulCardOtherDetails {
+  margin-top: 8px;
+  display: none;
+}
+@media screen and (min-width: 800px) {
+  .soulCardContainer {
+    cursor: pointer;
+  }
+  .soulCardName {
+    font-size: 16px;
+  }
+  .soulCardDate {
+    font-size: 12px;
+  }
+  .soulCardOtherDetails {
+    margin-top: 8px;
+    display: block;
+  }
+  .soulCardOptions {
+    bottom: 0px;
+  }
+  .soulCardOptionIcon {
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  .soulCardOptionIcon a:hover,
+  .soulCardOptionIcon span:hover {
+    color: black !important;
+    background-color: #e6e6e6;
+  }
+  .soulCardOptionIcon:active {
+    color: black;
+  }
+}

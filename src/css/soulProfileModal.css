@@ -1,0 +1,95 @@
+.soulProfileModal .ModalContainer {
+  animation: zoom 0.2s ease both;
+  width: 90%;
+  padding: 0px !important;
+}
+.soulProfileModalDetailContainer {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.soulProfileModalIcon {
+  color: #29abe2;
+  display: inline-flex;
+}
+.soulProfileModalIconDetail {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  color: grey;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.soulProfileModalIconDetail span:first-child {
+  font-size: 12px;
+  color: #2895c4;
+  margin-right: 5px;
+}
+.soulProfileModalPrayerRequestContainer {
+  margin-top: 15px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+}
+.soulProfileModalPrayerRequestHeader {
+  font-size: 14px;
+  font-weight: 600;
+  color: grey;
+}
+.soulProfileModalPrayerRequest {
+  color: grey;
+  margin-top: 5px;
+  font-size: 14px;
+}
+.soulProfileModalImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.soulProfileModalImageContainer div {
+  border-radius: 60px;
+  height: 120px;
+  width: 120px;
+  background-color: lightgray;
+  overflow: hidden;
+}
+.soulProfileModalImageContainer div img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/* ========= 
+soulProfileEditForm 
+========*/
+.soulProfileEditForm {
+  padding-top: 0 !important;
+}
+.soulProfileEditForm .inputBoxContainerMobile {
+  width: 100%;
+}
+.soulProfileEditForm .optionBtns {
+  width: 100%;
+}
+.soulProfileEditForm .optionBtns button {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* ========
+TAB and PC 
+======= */
+@media screen and (min-width: 768px) {
+  .soulProfileModal .ModalContainer {
+    width: 50% !important;
+  }
+}
+/* ========
+TAB and PC 
+======= */
+@media screen and (min-width: 992px) {
+  .soulProfileModal .ModalContainer {
+    width: 30% !important;
+  }
+}

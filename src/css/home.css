@@ -1,0 +1,10 @@
+.homeContainer {
+  height: 100vh;
+  background-color: #e4e4e4;
+}
+@media screen and (min-width: 800px) {
+  .homeContainer {
+    height: 100vh;
+    overflow: auto;
+  }
+}

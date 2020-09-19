@@ -1,0 +1,109 @@
+.notificationsContainer {
+  padding: 15px;
+  padding-bottom: 70px;
+  background-color: inherit;
+}
+.notificationsHeader {
+  position: relative;
+  padding-bottom: 10px;
+}
+.notificationsHeaderTitle {
+  font-size: 16px;
+  color: black;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.notificationsSendBtn {
+  display: inline-block;
+  background-color: #29abe2;
+  color: white;
+  font-size: 14px;
+  padding: 5px 15px;
+  border-radius: 3px;
+  position: absolute;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  cursor: none;
+}
+.notificationsSendBtn:hover {
+  background-color: #258ebb;
+}
+.notificationsSendBtn span svg {
+  display: flex;
+  align-items: center;
+}
+.notificationContainer {
+  padding: 15px 10px 15px 25px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 10px;
+  border: 1px solid lightgrey;
+  animation: slide 0.2s ease both;
+}
+.notificationMessage {
+  font-size: 14px;
+}
+.notificationDate {
+  color: #999999;
+  margin-top: 8px;
+  font-size: 12px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notificationDeleteBtn {
+  color: #999999;
+  font-size: 12px;
+  cursor: none;
+  transition: 0.1s ease;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+.notificationIcon {
+  color: #29abe2;
+  position: absolute;
+  left: 5px;
+  top: 18px;
+}
+@media screen and (min-width: 800px) {
+  .notificationsContainer {
+    padding: 10px;
+    padding-top: 0px;
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+  }
+  .notificationsHeader {
+    padding-bottom: 0px;
+  }
+  .notificationContainer {
+    padding: 5px 10px 8px 28px;
+    position: relative;
+  }
+  .notificationsCardContainer {
+    overflow: auto;
+    height: 80vh;
+    margin-top: 10px;
+  }
+  .notificationIcon {
+    left: 10px;
+    top: 5px;
+  }
+  .notificationsSendBtn {
+    padding: 5px 15px;
+    cursor: pointer;
+  }
+  .notificationDeleteBtn {
+    cursor: pointer;
+  }
+  .notificationDeleteBtn:hover {
+    background-color: lightgray;
+    color: black;
+  }
+  .notificationDeleteBtn:active {
+    color: black;
+  }
+}
