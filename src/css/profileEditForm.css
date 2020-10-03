@@ -26,8 +26,8 @@
   text-transform: capitalize;
 }
 .profileEditFormInputBox:focus {
-  outline: 1px solid #29abe2;
-  border: 1px solid #29abe2;
+  outline: 1px solid var(--mainColor);
+  border: 1px solid var(--mainColor);
 }
 .profileEditPicContainer {
   width: 100%;

@@ -1,14 +1,5 @@
 {
   "projects": {
-    "default": "soulbook-6b850"
-  },
-  "targets": {
-    "soulbook-6b850": {
-      "hosting": {
-        "main": [
-          "smsoulbook"
-        ]
-      }
-    }
+    "default": "tkasoulbook"
   }
 }

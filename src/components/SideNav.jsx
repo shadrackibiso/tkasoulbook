@@ -88,22 +88,23 @@ function SideNav(props) {
             <div className="sideNavIconLabel">Sermons</div>
           </div>
         </NavLink>
-        {/* <NavLink to="/foundationClass">
+        {/* JOURNEY */}
+        {/* <NavLink to="/journeyClass">
           <div
             className={
-              props.page === "foundationClass"
+              props.page === "journeyClass"
                 ? "sideNavIconContainer selected"
                 : "sideNavIconContainer"
             }
             style={{
               display:
-                props.accountType && props.accountType === "member" && "none"
+                props.accountType && props.accountType === "member" && "none",
             }}
           >
             <div className="sidenavIcon">
               <FiBook />
             </div>
-            <div className="sideNavIconLabel">Foundation class</div>
+            <div className="sideNavIconLabel">Journey Class</div>
           </div>
         </NavLink> */}
         {/* LEADER BOARD */}
@@ -131,7 +132,9 @@ function SideNav(props) {
             }
             style={{
               display:
-                (props.accountType && props.accountType.toLowerCase() === "member" && "none") ||
+                (props.accountType &&
+                  props.accountType.toLowerCase() === "member" &&
+                  "none") ||
                 (!props.accountType && "none"),
             }}
           >
@@ -142,7 +145,7 @@ function SideNav(props) {
           </div>
         </NavLink>
         {/* HOME CELL */}
-        <NavLink to="/homeCell">
+        {/* <NavLink to="/homeCell">
           <div
             className={
               props.page === "homecell"
@@ -155,7 +158,8 @@ function SideNav(props) {
             </div>
             <div className="sideNavIconLabel">Homecell</div>
           </div>
-        </NavLink>
+        </NavLink> */}
+        {/* LOG OUT */}
         <div className="sideNavIconContainer sideNavLogOutBtn" onClick={logOut}>
           <div className="sidenavIcon">
             <IoMdLogOut />

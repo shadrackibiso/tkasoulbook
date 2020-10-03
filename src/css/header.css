@@ -72,7 +72,7 @@
     right: 60px;
   }
   .headerUserNameVerifiedIcon {
-    color: #29abe2;
+    color: var(--mainColor);
     margin-right: 5px;
   }
   .headerAppName {

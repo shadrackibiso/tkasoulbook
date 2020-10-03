@@ -41,7 +41,7 @@ select {
   position: relative;
 }
 .mainBtn {
-  background-color: #29abe2;
+  background-color: var(--mainColor);
   color: white;
   font-size: 14px;
   text-align: center;
@@ -50,7 +50,7 @@ select {
   border-radius: 3px;
   transition: 0.2s ease;
   display: flex;
-  border: 1px solid #29abe2;
+  border: 1px solid var(--mainColor);
   text-transform: capitalize;
 }
 .mainBtn:hover {
@@ -110,8 +110,8 @@ select {
   }
   .mainBtn:focus {
     background-color: white;
-    color: #29abe2;
-    border: 1px solid #29abe2 !important;
+    color: var(--mainColor);
+    border: 1px solid var(--mainColor) !important;
     outline: none;
   }
   .optionBtn:hover {

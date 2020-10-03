@@ -55,7 +55,7 @@
 }
 .addSoulTabSelected {
   color: white;
-  background-color: #29abe2;
+  background-color: var(--mainColor);
   width: 33.3333%;
   display: inline-block;
   text-align: center;

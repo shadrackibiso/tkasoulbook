@@ -250,6 +250,7 @@ export default class App extends Component {
         prayerRequest: soulProfile.prayerRequest,
         serviceGroup: soulProfile.serviceGroup,
         verified: soulProfile.verified,
+        journeyClass: soulProfile.journeyClass,
       })
       .then(
         this.setState((prevState) => ({

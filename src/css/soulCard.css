@@ -24,7 +24,7 @@
   position: absolute;
   width: 7px;
   height: 100%;
-  background: #29abe2;
+  background: var(--mainColor);
   top: 0;
   left: 0;
 }
@@ -59,7 +59,7 @@
   font-size: 15px;
 }
 .soulCardMainIcon {
-  color: #29abe2;
+  color: var(--mainColor);
 }
 .soulCardOptionIcon:last-child {
   border-right: none;

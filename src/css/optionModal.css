@@ -68,7 +68,7 @@
 }
 .optionModalOptions div {
   display: inline-flex;
-  background: #29abe2;
+  background: var(--mainColor);
   color: white;
   padding: 5px 15px;
   border-radius: 3px;

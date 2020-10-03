@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import SideNav from "../components/SideNav";
 import SoulCard from "../components/SoulCard";
-import SearchBar from "../components/SoulsWonSearchBar";
+import SearchBar from "../components/JourneyClassSearchBar";
 import AddSoulModal from "../components/AddSoulModal";
 import moment from "moment";
 import "../css/soulsWon.css";
@@ -15,10 +15,8 @@ import OfflineError from "../components/OfflineError";
 function SoulsWon(props) {
   const [selectedTab, setSelectedTab] = useState("evangelism");
   const [month, setMonth] = useState("all");
-  const [journey, setJourney] = useState("");
+  const [journey, setJourney] = useState("all");
   const [searchValue, setSetSearchValue] = useState("");
-
-  // all souls
   const allSouls = () => {
     if (props.soulsWon && props.accountType && props.accountType === "member") {
       return props.soulsWon.filter((soul) => soul.wonBy.id === props.id);
@@ -26,61 +24,38 @@ function SoulsWon(props) {
       return props.soulsWon && props.soulsWon;
     }
   };
-
-  // displayed souls
-  const displayedSouls = () => {
-    // if a month is selected and a journey is selected
-    if (props.soulsWon && month !== "all" && journey !== "") {
-      return allSouls().filter(
-        (soul) =>
-          soul.wonThrough === selectedTab &&
-          soul.name.toLowerCase().includes(searchValue.toLowerCase()) &&
-          moment(soul.createdAt.toDate()).month() === eval(month) &&
-          soul.journeyClass[journey] === true
-      );
-    }
-    // if a month is selected and no journey is selected
-    else if (props.soulsWon && month !== "all" && journey === "") {
-      return allSouls().filter(
-        (soul) =>
-          soul.wonThrough === selectedTab &&
-          soul.name.toLowerCase().includes(searchValue.toLowerCase()) &&
-          moment(soul.createdAt.toDate()).month() === eval(month)
-      );
-    }
-    //  if no month is selected and a journey is selected
-    else if (props.soulsWon && month === "all" && journey !== "") {
-      return allSouls().filter(
-        (soul) =>
-          soul.wonThrough === selectedTab &&
-          soul.name.toLowerCase().includes(searchValue.toLowerCase()) &&
-          soul.journeyClass[journey] === true
-      );
-    }
-    //  if no month is selected and no journey is selected
-    else {
-      return (
-        props.soulsWon &&
+  const displayedSouls =
+    props.soulsWon && month !== "all"
+      ? allSouls().filter(
+          (soul) =>
+            soul.wonThrough === selectedTab &&
+            soul.name.toLowerCase().includes(searchValue.toLowerCase()) &&
+            moment(soul.createdAt.toDate()).month() === eval(month)
+        )
+      : props.soulsWon &&
         allSouls().filter(
           (soul) =>
             soul.wonThrough === selectedTab &&
             soul.name.toLowerCase().includes(searchValue.toLowerCase())
-        )
-      );
-    }
-  };
+        );
 
-  console.log(displayedSouls());
-  // souls won
   const soulsWon =
     props.soulsWon &&
-    displayedSouls()
+    displayedSouls
       .sort((a, b) => (a.createdAt > b.createdAt ? -1 : 1))
       .map((soul, i) => <SoulCard key={i} {...soul} store={props} />);
+
+  const totalSoulsWon = props.soulsWon && displayedSouls.length;
 
   const changeTab = (value) => {
     setSelectedTab(value);
     setMonth("all");
+  };
+  const changeMonth = (value) => {
+    setMonth(value);
+  };
+  const changeSearchValue = (value) => {
+    setSetSearchValue(value);
   };
   const showModal = () => {
     document.querySelector(".addSoulModal").style.display = "flex";
@@ -91,10 +66,10 @@ function SoulsWon(props) {
       <div className="soulsWonContainer">
         <div className=" row section">
           <div className="mobileContainer col-12">
-            <Header {...props} page="Souls Won" />
+            <Header {...props} page="JourneyClass" />
           </div>
           <div className="mobileContainer col-lg-2">
-            <SideNav page="soulsWon" {...props} />
+            <SideNav page="journeyClass" {...props} />
           </div>
           <div
             className="mobileContainer col-lg-10 pr-lg-0 scrollContainer"
@@ -118,16 +93,14 @@ function SoulsWon(props) {
               showModal={showModal}
               changeTab={changeTab}
               selectedTab={selectedTab}
-              totalSouls={props.soulsWon && displayedSouls().length}
+              totalSouls={totalSoulsWon}
               selectedMonth={month}
-              changeMonth={(value) => setMonth(value)}
-              selectedJourney={journey}
-              setJourney={(value) => setJourney(value)}
+              changeMonth={changeMonth}
               searchValue={searchValue}
-              changeSearchValue={(value) => setSetSearchValue(value)}
+              changeSearchValue={changeSearchValue}
             />
             <div className="soulsWonCardContainer row">
-              {props.soulsWon && displayedSouls().length > 0 ? (
+              {props.soulsWon && displayedSouls.length > 0 ? (
                 soulsWon
               ) : (
                 <div className="emptyDisplayText">no soul found...</div>

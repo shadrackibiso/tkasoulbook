@@ -29,7 +29,7 @@
     color: #777777;
   }
   .addSoulCard {
-    background-color: #29abe2;
+    background-color: var(--mainColor);
     color: white;
     cursor: pointer;
   }

@@ -78,10 +78,10 @@
 .homeCellFormInputBox:focus,
 .homeCellFormTextArea:focus {
   outline: none;
-  border: 1.5px solid #29abe2;
+  border: 1.5px solid var(--mainColor);
 }
 .homeCellFormBtn {
-  background-color: #29abe2;
+  background-color: var(--mainColor);
   border-radius: 5px;
   margin: 0px auto;
   color: white;
@@ -168,10 +168,10 @@
   .homeCellFormInputBox:focus,
   .homeCellFormTextArea:focus {
     outline: none;
-    border: 1.5px solid #29abe2;
+    border: 1.5px solid var(--mainColor);
   }
   .homeCellFormBtn {
-    background-color: #29abe2;
+    background-color: var(--mainColor);
     border-radius: 5px;
     margin: 0px auto;
     color: white;

@@ -15,7 +15,7 @@
 }
 .notificationsSendBtn {
   display: inline-block;
-  background-color: #29abe2;
+  background-color: var(--mainColor);
   color: white;
   font-size: 14px;
   padding: 5px 15px;
@@ -63,7 +63,7 @@
   border-radius: 50px;
 }
 .notificationIcon {
-  color: #29abe2;
+  color: var(--mainColor);
   position: absolute;
   left: 5px;
   top: 18px;

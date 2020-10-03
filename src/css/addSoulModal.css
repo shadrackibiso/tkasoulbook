@@ -29,12 +29,12 @@
   background-color: #e7e7e7;
 }
 .selectedTab {
-  background-color: #29abe2;
+  background-color: var(--mainColor);
   color: white;
   transition: 0.1s ease;
 }
 .selectedTab:hover {
-  background-color: #29abe2 !important;
+  background-color: var(--mainColor) !important;
 }
 .inputBoxRow .inputBoxContainer {
   display: inline-block;
@@ -56,8 +56,8 @@
   padding: 10px;
 }
 .inputBox:focus {
-  outline: 1px solid #29abe2;
-  border: 1px solid #29abe2;
+  outline: 1px solid var(--mainColor);
+  border: 1px solid var(--mainColor);
 }
 .inputBoxRow:first-child {
   margin-top: 0;

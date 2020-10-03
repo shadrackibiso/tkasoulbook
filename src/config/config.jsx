@@ -3,14 +3,14 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyByMkl5kmmO_TH-qZ97MvEX_3jA4E_6NgE",
-  authDomain: "soulbook-6b850.firebaseapp.com",
-  databaseURL: "https://soulbook-6b850.firebaseio.com",
-  projectId: "soulbook-6b850",
-  storageBucket: "soulbook-6b850.appspot.com",
-  messagingSenderId: "549004567536",
-  appId: "1:549004567536:web:04a623235b84be2394f335",
-  measurementId: "G-QQEJD73G70"
+  apiKey: "AIzaSyD7O9OEz53uIaKeTJiuPwTZ9-HgiJo73mk",
+  authDomain: "tkasoulbook.firebaseapp.com",
+  databaseURL: "https://tkasoulbook.firebaseio.com",
+  projectId: "tkasoulbook",
+  storageBucket: "tkasoulbook.appspot.com",
+  messagingSenderId: "30198350438",
+  appId: "1:30198350438:web:669b72d195d90c6914e3a7",
+  measurementId: "G-8QS5F47563",
 };
 
 const fb = firebase.initializeApp(firebaseConfig);

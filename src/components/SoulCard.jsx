@@ -11,6 +11,10 @@ import {
   MdVerifiedUser,
 } from "react-icons/md";
 import { FaTransgender } from "react-icons/fa";
+import {
+  IoIosCheckmarkCircleOutline,
+  IoIosCheckmarkCircle,
+} from "react-icons/io";
 import OptionModal from "./OptionModal";
 import moment from "moment";
 
@@ -45,12 +49,50 @@ function SoulCard(props) {
             <div className="soulCardDate">
               {moment(props.createdAt.toDate()).format("LL")}
             </div>
-            {/* verified */}
+            {/* verification and journey */}
             <div
-              className="soulCardMainIcon"
-              style={{ display: props.verified !== "true" && "none" }}
+              className="soulCardMainIcon d-flex align-items-center"
+              style={{
+                display:
+                  props.verified !== "true" ||
+                  (!props.journeyClass.journey101 && "none"),
+              }}
             >
-              <MdVerifiedUser />
+              {/* initial verification */}
+              <div style={{ display: props.verified !== "true" && "none" }}>
+                <IoIosCheckmarkCircle />
+              </div>
+              {/* journey 101 */}
+              <div
+                style={{ display: !props.journeyClass.journey101 && "none" }}
+              >
+                <IoIosCheckmarkCircleOutline />
+              </div>
+              {/* journey 201 */}
+              <div
+                style={{ display: !props.journeyClass.journey201 && "none" }}
+              >
+                <IoIosCheckmarkCircleOutline />
+              </div>
+              {/* journey 301 */}
+              <div
+                style={{ display: !props.journeyClass.journey301 && "none" }}
+              >
+                <IoIosCheckmarkCircleOutline />
+              </div>
+              {/* journey 401 */}
+              <div
+                style={{ display: !props.journeyClass.journey401 && "none" }}
+              >
+                <IoIosCheckmarkCircleOutline />
+              </div>
+              {/* final verification */}
+              <div
+                style={{ display: !props.journeyClass.journey401 && "none" }}
+              >
+                <MdVerifiedUser />
+              </div>
+              {/*  */}
             </div>
           </div>
 
@@ -161,43 +203,39 @@ function SoulCard(props) {
             </span>
           </span>
         </div>
+        {/*  */}
+      </div>
+      {/* card end */}
 
-        {/* ========
+      {/* ========
         PROFILE MODAL
         ========= */}
-        <div
-          className="soulProfileModalWrapper"
-          style={{ display: showModal ? "flex" : "none" }}
-        >
-          <SoulProfileModal
-            {...props}
-            closeModal={closeModal}
-            page="soulsWon"
-          />
-        </div>
+      <div
+        className="soulProfileModalWrapper"
+        style={{ display: showModal ? "flex" : "none" }}
+      >
+        <SoulProfileModal {...props} closeModal={closeModal} page="soulsWon" />
+      </div>
 
-        {/* ========
+      {/* ========
         DELETE MODAL
         ========= */}
-        <div
-          className="deleteOptionModal"
-          style={{ display: !showDeleteModal && "none" }}
-        >
-          <OptionModal
-            type="delete"
-            closeModal={() => displayDeleteModal(false)}
-            title="Delete Soul?"
-            message={
-              "soul would be permanently deleted and cannot be recovered"
-            }
-            action={() => {
-              props.store.deleteSoul(props);
-              displayDeleteModal(false);
-            }}
-          />
-        </div>
-        {/* ======= */}
+      <div
+        className="deleteOptionModal"
+        style={{ display: !showDeleteModal && "none" }}
+      >
+        <OptionModal
+          type="delete"
+          closeModal={() => displayDeleteModal(false)}
+          title="Delete Soul?"
+          message={"soul would be permanently deleted and cannot be recovered"}
+          action={() => {
+            props.store.deleteSoul(props);
+            displayDeleteModal(false);
+          }}
+        />
       </div>
+      {/* ======= */}
     </div>
   );
 }

@@ -14,7 +14,7 @@
   justify-content: center;
   color: white;
   font-size: 18px;
-  background-color: #29abe2;
+  background-color: var(--mainColor);
   position: fixed;
   bottom: 70px;
   right: 10px;

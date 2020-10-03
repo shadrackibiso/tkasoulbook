@@ -32,17 +32,27 @@ function MemberCard(props) {
   return (
     <div className=" col-lg-4 col-md-6 col-xl-3 pl-0 pl-md-2 pl-lg-0 m-0 mobileContainer">
       <div className="soulCardContainer memberCardContainer">
+        {/* border */}
         <div className="soulCardGradient"></div>
+
+        {/* =====
+         content
+         ======= */}
         <div onClick={openModal}>
+          {/* Date */}
           <div className="soulCardDate memberCardDate">
             {moment(props.createdAt.toDate()).format("LL")}
           </div>
+
+          {/* Profile Pic */}
           <div className="memberProfilePicContainer">
             <img
               src={props.profilePic ? props.profilePic : profilePic}
               alt="memberProfilePic"
             />
           </div>
+
+          {/* Name */}
           <div className="soulCardNameContainer memberNameContainer">
             <span className="soulCardMainIcon">
               <MdPerson />
@@ -55,6 +65,8 @@ function MemberCard(props) {
               </span>
             )}
           </div>
+
+          {/* Address */}
           <div className="soulCardAddressContainer">
             <span className="soulCardMainIcon">
               <MdLocationOn />
@@ -67,7 +79,10 @@ function MemberCard(props) {
               </span>
             )}
           </div>
+
+          {/* ===== Other Details ======== */}
           <div className="soulCardOtherDetails">
+            {/* Phone Number */}
             <div className="soulProfileModalDetailContainer">
               <div className="soulProfileModalIcon">
                 <MdPhone />
@@ -78,6 +93,7 @@ function MemberCard(props) {
               </div>
             </div>
 
+            {/* Occupation */}
             <div className="soulProfileModalDetailContainer">
               <div className="soulProfileModalIcon">
                 <MdBusinessCenter />
@@ -87,6 +103,8 @@ function MemberCard(props) {
                 {props.occupation}
               </div>
             </div>
+
+            {/* Bus Stop */}
             <div className="soulProfileModalDetailContainer">
               <div className="soulProfileModalIcon">
                 <MdDirectionsBus />
@@ -96,6 +114,8 @@ function MemberCard(props) {
                 {props.busStop}
               </div>
             </div>
+
+            {/* Gender */}
             <div className="soulProfileModalDetailContainer">
               <div className="soulProfileModalIcon">
                 <FaTransgender />
@@ -105,6 +125,8 @@ function MemberCard(props) {
                 {props.gender}
               </div>
             </div>
+
+            {/* Souls Won */}
             <div className="soulProfileModalDetailContainer">
               <div className="soulProfileModalIcon">
                 <MdPeople />
@@ -116,6 +138,8 @@ function MemberCard(props) {
                 </span>
               </div>
             </div>
+
+            {/* Satellite Church */}
             <div className="soulProfileModalDetailContainer">
               <div className="soulProfileModalIcon">
                 <FaChurch />
@@ -125,6 +149,8 @@ function MemberCard(props) {
                 {props.satelliteChurch}
               </div>
             </div>
+
+            {/* Service Group */}
             <div className="soulProfileModalDetailContainer">
               <div className="soulProfileModalIcon">
                 <MdMyLocation />
@@ -136,6 +162,10 @@ function MemberCard(props) {
             </div>
           </div>
         </div>
+
+        {/* =========
+        ACTION BUTTONS
+        ========== */}
         <div className="soulCardOptions">
           <span className="soulCardOptionIcon">
             <a href={`tel:${props.phoneNumber}`} title="call">
@@ -155,26 +185,36 @@ function MemberCard(props) {
             <MdDelete />
           </span>
         </div>
-        <div
-          className="soulProfileModalWrapper"
-          style={{ display: showModal ? "flex" : "none" }}
-        >
-          <MemberProfileModal {...props} closeModal={closeModal} />
-        </div>
-        <div
-          className="deleteOptionModal"
-          style={{ display: !showDeleteModal && "none" }}
-        >
-          <OptionModal
-            closeModal={() => displayDeleteModal(false)}
-            message={"Are you sure you want to delete?"}
-            action={() => {
-              props.store.deleteMember(props.id);
-              displayDeleteModal(false);
-            }}
-          />
-        </div>
       </div>
+      {/* card end */}
+
+      {/* ========
+        PROFILE MODAL
+        ========= */}
+      <div
+        className="soulProfileModalWrapper"
+        style={{ display: showModal ? "flex" : "none" }}
+      >
+        <MemberProfileModal {...props} closeModal={closeModal} />
+      </div>
+
+      {/* ========
+        DELETE MODAL
+        ========= */}
+      <div
+        className="deleteOptionModal"
+        style={{ display: !showDeleteModal && "none" }}
+      >
+        <OptionModal
+          closeModal={() => displayDeleteModal(false)}
+          message={"Are you sure you want to delete?"}
+          action={() => {
+            props.store.deleteMember(props.id);
+            displayDeleteModal(false);
+          }}
+        />
+      </div>
+      {/*  */}
     </div>
   );
 }

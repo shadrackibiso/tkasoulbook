@@ -3,13 +3,13 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./Home";
 import SoulsWon from "./SoulsWon";
 import Testimonies from "./Testimonies";
-import HomeCell from "./HomeCell";
+// import HomeCell from "./HomeCell";
 import Members from "./Members";
 import Sermons from "./Sermons";
 import SingleSermon from "./SingleSermon";
 import LeaderBoard from "./LeaderBoard";
 import Profile from "./Profile";
-import FoundationClass from "./FoundationClass";
+// import JourneyClass from "./JourneyClass";
 import LogIn from "./LogIn";
 import SignUp from "./SignUp";
 import AddSoul from "./AddSoul";
@@ -46,18 +46,18 @@ function AppRouter(props) {
           <Route path="/leaderBoard">
             <LeaderBoard {...props} />
           </Route>
-          <Route path="/homeCell">
+          {/* <Route path="/homeCell">
             <HomeCell {...props} />
-          </Route>
+          </Route> */}
           <Route path="/members">
             <Members {...props} />
           </Route>
           <Route path="/profile">
             <Profile {...props} />
           </Route>
-          <Route path="/foundationClass">
-            <FoundationClass {...props} />
-          </Route>
+          {/* <Route path="/journeyClass">
+            <JourneyClass {...props} />
+          </Route> */}
           <Route path="/addSoul">
             <AddSoul {...props} />
           </Route>

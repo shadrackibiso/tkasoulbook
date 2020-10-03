@@ -33,7 +33,7 @@
   .soulsWonAddSoulBtn {
     display: flex;
     flex-basis: 30%;
-    background-color: #29abe2;
+    background-color: var(--mainColor);
     color: white;
     font-size: 14px;
     padding: 8px 10px;

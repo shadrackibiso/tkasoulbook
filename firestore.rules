@@ -1,7 +1,7 @@
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
- match /members/{userId} {
+   match /members/{userId} {
       allow create
       allow read
       allow write

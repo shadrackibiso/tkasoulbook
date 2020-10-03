@@ -9,7 +9,7 @@
   align-items: center;
 }
 .soulProfileModalIcon {
-  color: #29abe2;
+  color: var(--mainColor);
   display: inline-flex;
 }
 .soulProfileModalIconDetail {

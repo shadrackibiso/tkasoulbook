@@ -1,7 +1,7 @@
 import React from "react";
 import { MdSearch, MdPersonAdd } from "react-icons/md";
 
-function SoulsWonSearchBar(props) {
+function JourneyClassSearchBar(props) {
   return (
     <div className="searchBarContainer">
       <div
@@ -107,7 +107,7 @@ function SoulsWonSearchBar(props) {
             value={props.selectedJourney}
             onChange={(e) => props.setJourney(e.target.value)}
           >
-            <option value="">Journey</option>
+            <option value="all">Journey</option>
             <option value="journey101">Journey 101</option>
             <option value="journey201">Journey 201</option>
             <option value="journey301">Journey 301</option>
@@ -119,14 +119,8 @@ function SoulsWonSearchBar(props) {
           <span className="totalSoulsWonCount">{props.totalSouls}</span>
         </div>
       </div>
-      <div className="soulsWonAddSoulBtn" onClick={props.showModal}>
-        <span className="soulsWonAddSoulBtnText">Add Soul</span>
-        <span className="soulsWonAddSoulBtnIcon">
-          <MdPersonAdd />
-        </span>
-      </div>
     </div>
   );
 }
 
-export default SoulsWonSearchBar;
+export default JourneyClassSearchBar;

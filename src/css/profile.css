@@ -34,7 +34,7 @@
 }
 .profileDetailIcon {
   margin-right: 10px;
-  color: #29abe2;
+  color: var(--mainColor);
   font-size: 16px;
 }
 .profileDetail {

@@ -12,8 +12,8 @@ export default function data() {
     country: "Nigeria",
     gender: "male",
     id: "837291871a",
-    name: "Odili Road Satellite Church",
-    occupation: "software developer",
+    name: "Admin",
+    occupation: "none",
     phoneNumber: "07080173071",
     profilePic: "",
     satelliteChurch: "odili road",
@@ -100,7 +100,13 @@ export default function data() {
         },
         wonThrough: "evangelism",
         serviceGroup: "technical",
-        verified: false,
+        journeyClass: {
+          journey101: true,
+          journey201: true,
+          journey301: false,
+          journey401: false,
+        },
+        verified: true,
       },
       {
         address: "5 Beulah avenue Trans Amadi Port Harcourt",
@@ -120,6 +126,12 @@ export default function data() {
         },
         wonThrough: "evangelism",
         serviceGroup: "technical",
+        journeyClass: {
+          journey101: true,
+          journey201: false,
+          journey301: false,
+          journey401: false,
+        },
         verified: false,
       },
       {
@@ -140,6 +152,12 @@ export default function data() {
         },
         wonThrough: "evangelism",
         serviceGroup: "technical",
+        journeyClass: {
+          journey101: true,
+          journey201: false,
+          journey301: false,
+          journey401: false,
+        },
         verified: false,
       },
       {
@@ -160,6 +178,12 @@ export default function data() {
         },
         wonThrough: "evangelism",
         serviceGroup: "technical",
+        journeyClass: {
+          journey101: true,
+          journey201: false,
+          journey301: false,
+          journey401: false,
+        },
         verified: false,
       },
       {
@@ -180,6 +204,12 @@ export default function data() {
         },
         wonThrough: "evangelism",
         serviceGroup: "technical",
+        journeyClass: {
+          journey101: true,
+          journey201: false,
+          journey301: false,
+          journey401: false,
+        },
         verified: false,
       },
       {
@@ -200,6 +230,12 @@ export default function data() {
         },
         wonThrough: "evangelism",
         serviceGroup: "technical",
+        journeyClass: {
+          journey101: true,
+          journey201: false,
+          journey301: false,
+          journey401: false,
+        },
         verified: false,
       },
       {
@@ -220,6 +256,12 @@ export default function data() {
         },
         wonThrough: "altarCall",
         serviceGroup: "technical",
+        journeyClass: {
+          journey101: true,
+          journey201: false,
+          journey301: false,
+          journey401: false,
+        },
         verified: false,
       },
       {
@@ -240,6 +282,12 @@ export default function data() {
         },
         wonThrough: "firstTimer",
         serviceGroup: "technical",
+        journeyClass: {
+          journey101: true,
+          journey201: false,
+          journey301: false,
+          journey401: false,
+        },
         verified: false,
       },
     ],
@@ -578,7 +626,7 @@ export default function data() {
           "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Scripta periculis ei eam, te pro movet reformidans. Ad doctus gubergren duo, mel te postea suavitate. Scripta periculis ei eam, te pro movet reformidans. Vis labore scripta ne, ut alii mediocritatem his. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Scripta periculis ei eam, te pro movet reformidans. Offendit eleifend moderatius ex vix, quem odio mazim et qui, purto expetendis cotidieque quo cu, veri persius vituperata ei nec. Vivendum intellegat et qui, ei denique consequuntur vix. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nibh detracto incorrupte eos eu, iuvaret perfecto eam in, his eu possit dolorum temporibus. Pri posse graeco definitiones cu, id eam populo quaestio adipiscing, usu quod malorum te. Saepe imperdiet at per, appareat vituperata vix te, pri sint assueverit te.</p>",
         title: "How to communicate with the Holy Spirit",
         scriptures: "Matthew 5:12, Roman 4:3-8",
-        author: "Pst David Ibiyeomie",
+        author: "Pst Chris Ugoh",
       },
       {
         id: "ano2",
@@ -587,7 +635,7 @@ export default function data() {
           "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Scripta periculis ei eam, te pro movet reformidans. Ad doctus gubergren duo, mel te postea suavitate. Scripta periculis ei eam, te pro movet reformidans. Vis labore scripta ne, ut alii mediocritatem his. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Scripta periculis ei eam, te pro movet reformidans. Offendit eleifend moderatius ex vix, quem odio mazim et qui, purto expetendis cotidieque quo cu, veri persius vituperata ei nec. Vivendum intellegat et qui, ei denique consequuntur vix. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nibh detracto incorrupte eos eu, iuvaret perfecto eam in, his eu possit dolorum temporibus. Pri posse graeco definitiones cu, id eam populo quaestio adipiscing, usu quod malorum te. Saepe imperdiet at per, appareat vituperata vix te, pri sint assueverit te.</p>",
         title: "Importance of Tithing",
         scriptures: "Malachi 1, Luke 2:4",
-        author: "Pst Abiye Ibiyeomie",
+        author: "Pst Chris Ugoh",
       },
       {
         id: "ano3",
@@ -596,7 +644,7 @@ export default function data() {
           "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Scripta periculis ei eam, te pro movet reformidans. Ad doctus gubergren duo, mel te postea suavitate. Scripta periculis ei eam, te pro movet reformidans. Vis labore scripta ne, ut alii mediocritatem his. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Scripta periculis ei eam, te pro movet reformidans. Offendit eleifend moderatius ex vix, quem odio mazim et qui, purto expetendis cotidieque quo cu, veri persius vituperata ei nec. Vivendum intellegat et qui, ei denique consequuntur vix. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nibh detracto incorrupte eos eu, iuvaret perfecto eam in, his eu possit dolorum temporibus. Pri posse graeco definitiones cu, id eam populo quaestio adipiscing, usu quod malorum te. Saepe imperdiet at per, appareat vituperata vix te, pri sint assueverit te.</p>",
         title: "Gaining Insight from the word",
         scriptures: "Matthew 5:12, Roman 4:3-8",
-        author: "Pst David Ibiyeomie",
+        author: "Pst Chris Ugoh",
       },
       {
         id: "ano4",
@@ -605,7 +653,7 @@ export default function data() {
           "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Scripta periculis ei eam, te pro movet reformidans. Ad doctus gubergren duo, mel te postea suavitate. Scripta periculis ei eam, te pro movet reformidans. Vis labore scripta ne, ut alii mediocritatem his. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Scripta periculis ei eam, te pro movet reformidans. Offendit eleifend moderatius ex vix, quem odio mazim et qui, purto expetendis cotidieque quo cu, veri persius vituperata ei nec. Vivendum intellegat et qui, ei denique consequuntur vix. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nibh detracto incorrupte eos eu, iuvaret perfecto eam in, his eu possit dolorum temporibus. Pri posse graeco definitiones cu, id eam populo quaestio adipiscing, usu quod malorum te. Saepe imperdiet at per, appareat vituperata vix te, pri sint assueverit te.</p>",
         title: "Conceive it! power it by faith",
         scriptures: "Malachi 1, Luke 2:4",
-        author: "Pst Abiye Ibiyeomie",
+        author: "Pst Chris Ugoh",
       },
     ],
   };

@@ -12,12 +12,25 @@ function SoulProfileEditForm(props) {
     prayerRequest: props.prayerRequest,
     serviceGroup: props.serviceGroup,
     verified: props.verified,
+    journeyClass: { ...props.journeyClass },
   });
 
   const handleChange = (e) => {
     let detail = { [e.target.name]: e.target.value };
     setSoulProfile((prevState) => ({ ...prevState, ...detail }));
   };
+
+  const handleJourneyChange = (e) => {
+    let detail = { [e.target.name]: e.target.checked };
+    setSoulProfile((prevState) => ({
+      ...prevState,
+      journeyClass: {
+        ...prevState.journeyClass,
+        ...detail,
+      },
+    }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     props.store.editSoulProfile(soulProfile);
@@ -115,6 +128,9 @@ function SoulProfileEditForm(props) {
           onChange={handleChange}
         />
       </div>
+      {/*  */}
+      <hr className="w-100" />
+      {/*  */}
       {/* Service group */}
       <div
         className="inputBoxContainer inputBoxContainerMobile"
@@ -135,6 +151,55 @@ function SoulProfileEditForm(props) {
               </option>
             ))}
         </select>
+      </div>
+      {/* journey */}
+      <div className="d-flex flex-column w-100">
+        <div className="inputBoxLabel mb-2">Journey Class Attendance</div>
+        {/* 101 */}
+        <div>
+          <input
+            type="checkbox"
+            name="journey101"
+            value="journey101"
+            defaultChecked={props.journeyClass.journey101}
+            onChange={handleJourneyChange}
+          />
+          <label className="ml-2">Journey 101</label>
+        </div>
+        {/* 201 */}
+        <div>
+          <input
+            type="checkbox"
+            name="journey201"
+            value="journey201"
+            defaultChecked={props.journeyClass.journey201}
+            onChange={handleJourneyChange}
+          />
+          <label className="ml-2">Journey 201</label>
+        </div>
+        {/* 301 */}
+        <div>
+          <input
+            type="checkbox"
+            name="journey301"
+            value="journey301"
+            defaultChecked={props.journeyClass.journey301}
+            onChange={handleJourneyChange}
+          />
+          <label className="ml-2">Journey 301</label>
+        </div>
+        {/* 401 */}
+        <div>
+          <input
+            type="checkbox"
+            name="journey401"
+            value="journey401"
+            defaultChecked={props.journeyClass.journey401}
+            onChange={handleJourneyChange}
+          />
+          <label className="ml-2">Journey 401</label>
+        </div>
+        {/*  */}
       </div>
       {/* Verified */}
       <div

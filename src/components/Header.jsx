@@ -34,7 +34,7 @@ function Navbar(props) {
         <AiOutlineMenu />
       </div>
       <div className="headerTitle">{props.page}</div>
-      <div className="headerAppName">SALVATION MINISTRIES SOUL BOOK</div>
+      <div className="headerAppName">THE KINGS ASSEMBLY SOUL BOOK</div>
       <NavLink to="/profile" className="profileBtn" title="profile">
         <div className="headerProfilePic">
           <div className="headerUserNameLabel">

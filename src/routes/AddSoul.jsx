@@ -36,6 +36,12 @@ function AddSoul(props) {
       prayerRequest: prayerRequest.value,
       serviceGroup: "none",
       verified: false,
+      journeyClass: {
+        journey101: false,
+        journey201: false,
+        journey301: false,
+        journey401: false,
+      },
     };
     props.addSoul(soul);
     setRedirect(true);

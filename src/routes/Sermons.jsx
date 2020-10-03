@@ -28,10 +28,12 @@ function Sermons(props) {
         <div className="mobileContainer col-12">
           <Header {...props} page="Sermons" />
         </div>
+
         {/* Sidenav */}
         <div className="mobileContainer col-lg-2">
           <SideNav page="sermons" {...props} />
         </div>
+
         {/* loader */}
         <div
           className="mobileContainer col-lg-10"
@@ -48,6 +50,7 @@ function Sermons(props) {
           {/* offline message */}
           {!navigator.onLine && !props.sermons && <OfflineError />}
         </div>
+
         {/* main content */}
         <div
           className="mobileContainer col-lg-10"
@@ -74,11 +77,13 @@ function Sermons(props) {
             )}
           </div>
         </div>
+
         {/* Mobile Navbar */}
         <div className="mobileContainer col-12">
           <Navbar page="sermons" />
         </div>
       </div>
+
       {/* Sermon Form */}
       <div
         className="mobileContainer col-12"
@@ -86,6 +91,7 @@ function Sermons(props) {
       >
         <SermonForm {...props} closeModal={() => setDisplayForm(false)} />
       </div>
+
       {/* Mobile Sermon Add Button */}
       <div
         className="addTestimonyBtnMobile"

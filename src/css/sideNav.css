@@ -50,7 +50,7 @@
 }
 .selected {
   color: white;
-  background-color: #29abe2;
+  background-color: var(--mainColor);
 }
 .sidenavIcon {
   font-size: 20px;
@@ -103,11 +103,11 @@
   }
   .selected {
     color: white;
-    background-color: #29abe2;
+    background-color: var(--mainColor);
   }
   .selected:hover {
     color: white;
-    background-color: #29abe2;
+    background-color: var(--mainColor);
   }
   .headerUserNameLabel {
     position: absolute;
